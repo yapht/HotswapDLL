@@ -20,7 +20,7 @@ DWORD WINAPI HostThread(LPVOID)
     cr_plugin_open(plugin, PLUGIN_PATH);
 
     while (run && !cr_plugin_update(plugin))
-        Sleep(1000);
+        Sleep(PLUGIN_UPDATE_FREQ);
 
     cr_plugin_close(plugin);
 
