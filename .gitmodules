@@ -1,0 +1,3 @@
+[submodule "cr"]
+	path = cr
+	url = https://github.com/fungos/cr
